@@ -62,9 +62,11 @@ elIframeUp.addEventListener('click', function (evt) {
 		result.style.color = '#ff0000';
 	}, 11000);
 
-	if (evt.target.matches('.result')) {
-		elIframeUp.style.opacity = '0';
-		elIframeUp.style.right = '0';
-		elIframeUp.style.left = '700px';
+	if (result.textContent == 'X') {
+		if (evt.target.matches('.result')) {
+			elIframeUp.style.opacity = '0';
+			elIframeUp.style.right = '0';
+			elIframeUp.style.left = '700px';
+		}
 	}
 });
